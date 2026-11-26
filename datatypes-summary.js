@@ -50,3 +50,30 @@ console.log(typeof heros);
  *  function : function
  *   REST ALL AS IT IS 
  */
+
+
+//************MEMORY ***********/
+
+// Stack memory (primitive)(call by value) -> a copy of value is changed 
+// Heap (Non primitive)(call by reference) -> actual value is changed
+
+let myYoutubename = "shreyas vlogs"
+
+let anotherName = myYoutubename
+anotherName = "chaiwithshreyas"
+
+console.log(myYoutubename);  
+console.log(anotherName);
+
+let user = {
+    email : "shreyas@google.com",
+    upi : "user@ypi"
+}
+
+let user2 = user
+
+user2.email = "thakur@google.com"
+
+console.log(user.email); //thakur@google.com
+console.log(user2.email); //thakur@google.com 
+
